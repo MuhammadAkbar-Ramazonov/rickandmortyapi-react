@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router-dom";
 // import { Card } from "./components/Card";
 import { Header } from "./components/Header";
 import "./main.css";
+import { Epizod } from "./Pages/Epizod";
+import { Location } from "./Pages/Location";
+
 import { Charakters } from "./Pages/Charakters/Charakters";
 function App() {
 	return (
@@ -9,12 +12,9 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path='/' element={<Charakters />} />
-				<Route path='/epizod' element={"kmf"} />
-				<Route path='/location' element={"aj"} />
+				<Route path='/epizod' element={<Epizod />} />
+				<Route path='/location' element={<Location/>} />
 			</Routes>
-			<div className='wrapper mt-5'>
-
-			</div>
 		</div>
 	);
 }
